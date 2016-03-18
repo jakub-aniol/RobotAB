@@ -10,4 +10,8 @@ public class URLList {
     public int size() {
         return 1;
     }
+
+    public URL get(int i) {
+        return null;
+    }
 }
