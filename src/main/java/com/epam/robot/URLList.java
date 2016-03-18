@@ -22,4 +22,8 @@ public class URLList {
     public URL get(int i) {
         return urls.get(i);
     }
+
+    public void set(int i, URL url) {
+        urls.set(i,url);
+    }
 }

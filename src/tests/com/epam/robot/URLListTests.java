@@ -11,13 +11,14 @@ import static org.assertj.core.api.Assertions.*;
 public class URLListTests {
 
     private URLList list;
-    private URL expectedURL;
+    private URL expectedURL, otherURL;
 
     @BeforeMethod
     public void testPrepareList() {
         list = new URLList();
         try {
             expectedURL = new URL("http://example");
+            otherURL = new URL("http://otherURL");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -50,8 +51,12 @@ public class URLListTests {
     @Test
     public void testChangeURLInTheList() {
         //given
-        //list.add();
+        list.add(expectedURL);
+        URL expectedURL = otherURL;
         //when
+        list.set(0, otherURL);
+        URL actualURL = list.get(0);
         //then
+        assertThat(actualURL).isEqualTo(expectedURL);
     }
 }
