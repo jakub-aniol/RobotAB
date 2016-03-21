@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://jbc.bj.uj.edu.pl/Content/340709">
+    <dc:publisher xml:lang="pl">Wydawnictwa ICM</dc:publisher>
+    <dc:title xml:lang="pl">Open science in Poland 2014 a diagnosis</dc:title>
+    <dc:subject xml:lang="pl">nauka</dc:subject>
+    <dc:subject xml:lang="pl">Polska</dc:subject>
+    <dc:contributor xml:lang="pl">Szprot, Jakub. Red.</dc:contributor>
+    <dc:contributor xml:lang="pl">Siewicz, Krzysztof (1979- ).</dc:contributor>
+    <dc:contributor xml:lang="pl">Starczewski, Michał.</dc:contributor>
+    <dc:subject xml:lang="pl">otwarty dostęp</dc:subject>
+    <dc:type xml:lang="pl">e-książka</dc:type>
+    <dc:source xml:lang="pl">Biblioteka Jagiellońska, BJ Oz 000726</dc:source>
+    <dc:format xml:lang="en">application/pdf</dc:format>
+    <dc:contributor xml:lang="pl">Uniwersytet Warszawski. Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego.</dc:contributor>
+    <dc:format xml:lang="pl">application/pdf</dc:format>
+    <dc:contributor xml:lang="pl">Morys-Twarowski, Michael.</dc:contributor>
+    <dc:contributor xml:lang="pl">Leśniak, Andrzej (1978- ).</dc:contributor>
+    <dc:date xml:lang="pl">2015</dc:date>
+    <dc:coverage xml:lang="pl">21 w.</dc:coverage>
+    <dc:contributor xml:lang="pl">Stępińska-Ustasiak, Lidia.</dc:contributor>
+    <dc:contributor xml:lang="pl">Chodorowska, Krystyna. Tł.</dc:contributor>
+    <dc:rights xml:lang="pl">http://creativecommons.org/licenses/by/3.0/pl/ Creative Commons BY 3.0</dc:rights>
+    <dc:language xml:lang="pl">eng</dc:language>
+  </rdf:Description>
+</rdf:RDF>
+
+	

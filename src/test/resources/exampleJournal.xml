@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://jbc.bj.uj.edu.pl/Content/340804">
+    <dc:rights xml:lang="pl">Domena publiczna (public domain)</dc:rights>
+    <dc:format xml:lang="en">application/pdf</dc:format>
+    <dc:format xml:lang="pl">application/pdf</dc:format>
+    <dc:subject xml:lang="pl">Polska</dc:subject>
+    <dc:type xml:lang="pl">czasopismo</dc:type>
+    <dc:subject xml:lang="pl">czasopisma ilustrowane</dc:subject>
+    <dc:coverage xml:lang="pl">20 w.</dc:coverage>
+    <dc:publisher xml:lang="pl">Zakłady Graficzne „Ilustrowanego Kuryera Codziennego”</dc:publisher>
+    <dc:source xml:lang="pl">Biblioteka Jagiellońska, 6469 III czasop.</dc:source>
+    <dc:publisher xml:lang="pl">Spółka Wydawnicza „Kuryer” S. A.</dc:publisher>
+    <dc:subject xml:lang="pl">prasa kobieca polska</dc:subject>
+    <dc:subject xml:lang="pl">Kraków</dc:subject>
+    <dc:language xml:lang="pl">pol</dc:language>
+    <dc:date xml:lang="pl">1939.09.03</dc:date>
+    <dc:subject xml:lang="pl">życie intelektualne</dc:subject>
+    <dc:subject xml:lang="pl">życie artystyczne</dc:subject>
+    <dc:title xml:lang="pl">AS : ilustrowany magazyn tygodniowy. 1939, nr 36</dc:title>
+    <dc:contributor xml:lang="pl">Maleszewski, Jan. Red.</dc:contributor>
+  </rdf:Description>
+</rdf:RDF>
+
+	
