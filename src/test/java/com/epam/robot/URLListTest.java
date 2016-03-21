@@ -59,4 +59,16 @@ public class URLListTest {
         //then
         assertThat(actualURL).isEqualTo(expectedURL);
     }
+
+    @Test
+    public void testRemoveURLFromTheList() {
+        //given
+        list.add(expectedURL);
+        int expectedSize = 0;
+        //when
+        list.remove(0);
+        int actualSize = list.size();
+        //then
+        assertThat(actualSize).isEqualTo(expectedSize);
+    }
 }

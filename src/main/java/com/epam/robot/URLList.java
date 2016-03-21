@@ -26,4 +26,8 @@ public class URLList {
     public void set(int i, URL url) {
         urls.set(i,url);
     }
+
+    public void remove(int i) {
+        urls.remove(i);
+    }
 }
