@@ -9,10 +9,11 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class XMLHandler {
+public class XMLHandler implements Parser {
     Downloader downloader;
     private List<Record> records;
 
@@ -28,7 +29,7 @@ public class XMLHandler {
     private void load() {
         records = new ArrayList<>();
         try {
-            NodeList items = getNodeList();
+            NodeList items = getNodeList(downloader.getStream(), "item");
             for (int x=0; x<items.getLength(); x++){
                 extractRecord(items.item(x));
             }
@@ -41,11 +42,6 @@ public class XMLHandler {
         }
     }
 
-    private NodeList getNodeList() throws SAXException, IOException, ParserConfigurationException {
-        Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(downloader.getStream());
-        return doc.getElementsByTagName("item");
-    }
-
     private void extractRecord(Node item) {
         NodeList children = item.getChildNodes();
         Node node;
@@ -53,8 +49,6 @@ public class XMLHandler {
         String title="";
         for (int x=0; x<children.getLength(); x++){
             node = children.item(x);
-            String t = node.getNodeName();
-            if (node.getNodeName().equals("#text")) continue;
             if (node.getNodeName().equals("link"))
                 url = node.getTextContent();
             else if (node.getNodeName().equals("title"))
