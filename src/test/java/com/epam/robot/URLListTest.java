@@ -1,5 +1,6 @@
 package com.epam.robot;
 
+import com.epam.robot.url.URLList;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

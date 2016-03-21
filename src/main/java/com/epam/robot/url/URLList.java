@@ -1,4 +1,4 @@
-package com.epam.robot;
+package com.epam.robot.url;
 
 import java.net.URL;
 import java.util.ArrayList;
