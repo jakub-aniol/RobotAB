@@ -50,7 +50,7 @@ public class XMLHandler implements Parser {
         for (int x=0; x<children.getLength(); x++){
             node = children.item(x);
             if (node.getNodeName().equals("link"))
-                url = node.getTextContent();
+                url = node.getTextContent().replace("docmetadata?from=rss&", "rdf.xml?type=e&");
             else if (node.getNodeName().equals("title"))
                 title = node.getTextContent();
         }

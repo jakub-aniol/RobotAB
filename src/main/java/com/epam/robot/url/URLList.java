@@ -2,9 +2,10 @@ package com.epam.robot.url;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class URLList {
+public class URLList implements Iterable<URL> {
     List<URL> urls;
 
     public URLList() {
@@ -29,5 +30,10 @@ public class URLList {
 
     public void remove(int i) {
         urls.remove(i);
+    }
+
+    @Override
+    public Iterator<URL> iterator() {
+        return urls.iterator();
     }
 }
