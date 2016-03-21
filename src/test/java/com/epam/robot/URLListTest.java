@@ -8,7 +8,7 @@ import java.net.URL;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class URLListTests {
+public class URLListTest {
 
     private URLList list;
     private URL expectedURL, otherURL;
