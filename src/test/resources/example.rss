@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+  <channel>
+    <title>Ostatnio dodane publikacje</title>
+    <link>http://jbc.bj.uj.edu.pl/dlibra/results.rss?type=latest&amp;dirids=1&amp;count=150&amp;id=rss_2.0</link>
+    <description>Lista ostatnio dodanych publikacji</description>
+    <item>
+      <title>Podtarnowskie Wieści : miesięcznik Gminy Tarnów. 1994, nr 1</title>
+      <link>http://jbc.bj.uj.edu.pl/dlibra/docmetadata?from=rss&amp;id=340805</link>
+      <description>Podtarnowskie Wieści : miesięcznik Gminy Tarnów. 1994, nr 1
+Data publikacji w Bibliotece cyfrowej: 2016-03-21</description>
+      <guid>http://jbc.bj.uj.edu.pl/dlibra/docmetadata?from=rss&amp;id=340805</guid>
+    </item>
+    <item>
+      <title>AS : ilustrowany magazyn tygodniowy. 1939, nr 36</title>
+      <link>http://jbc.bj.uj.edu.pl/dlibra/docmetadata?from=rss&amp;id=340804</link>
+      <description>AS : ilustrowany magazyn tygodniowy. 1939, nr 36
+Data publikacji w Bibliotece cyfrowej: 2016-03-19</description>
+      <guid>http://jbc.bj.uj.edu.pl/dlibra/docmetadata?from=rss&amp;id=340804</guid>
+    </item>
+  </channel>
+</rss>
+
+
+	

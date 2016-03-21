@@ -1,4 +1,4 @@
-package com.epam.robot;
+package com.epam.robot.url;
 
 import com.epam.robot.url.Downloader;
 import com.epam.robot.url.URLList;
