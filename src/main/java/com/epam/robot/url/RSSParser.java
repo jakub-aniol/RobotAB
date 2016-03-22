@@ -1,5 +1,7 @@
 package com.epam.robot.url;
 
+import com.epam.robot.messageBus.MessageProducer;
+import com.epam.robot.messageBus.messages.BookToLogMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.records.Record;
 
@@ -8,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class RSSParser {
+public class RSSParser implements MessageProducer {
     private URLList urlList;
     private List<Book> newestBooks;
 
@@ -32,6 +34,7 @@ public class RSSParser {
                 if (parser.isDateInvalid(r)) break;
                 if (parser.isBook(r)){
                     newestBooks.add(new Book(r));
+                    send(new BookToLogMessage(new Book(r)));
                 }
             }
         }

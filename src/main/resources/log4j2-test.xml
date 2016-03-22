@@ -10,6 +10,9 @@
         <File name="urlErrors" fileName="urlLogs.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
+        <File name="bookLogger" fileName="books.log">
+            <PatternLayout pattern="%d{YYYY-MM-DD} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
     </Appenders>
     <Loggers>
         <Root level="trace">
@@ -17,6 +20,9 @@
         </Root>
         <logger name="com.epam.robot.url" level="ERROR">
             <AppenderRef ref="urlErrors"/>
+        </logger>
+        <logger name="com.epam.robot.library" level="TRACE">
+            <AppenderRef ref="bookLogger"/>
         </logger>
     </Loggers>
 </Configuration>

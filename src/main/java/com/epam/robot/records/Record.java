@@ -36,7 +36,7 @@ public class Record {
         int year = Integer.parseInt(d.substring(0,4));
         int month = Integer.parseInt(d.substring(5,7));
         int day = Integer.parseInt(d.substring(8));
-        return new Date(year,month,day);
+        return new Date(year-1900,month-1,day);
     }
 
     public Date getDate() {
