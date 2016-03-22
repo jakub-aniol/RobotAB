@@ -13,9 +13,11 @@ public class URLListTest {
 
     private URLList list;
     private URL expectedURL, otherURL;
+    private String libraryName;
 
     @BeforeMethod
     public void testPrepareList() {
+        libraryName = "Example";
         list = new URLList();
         try {
             expectedURL = new URL("http://example");
@@ -31,7 +33,7 @@ public class URLListTest {
         int expectedListSize = 1;
         //when
         try {
-            list.add(new URL("http://example"));
+            list.add(libraryName, new URL("http://example"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -43,8 +45,8 @@ public class URLListTest {
     public void testGetURLFromList() {
         //given
         //when
-        list.add(expectedURL);
-        URL urlFromList = list.get(0);
+        list.add(libraryName, expectedURL);
+        URL urlFromList = list.get(libraryName);
         //then
         assertThat(urlFromList).isEqualTo(expectedURL);
     }
@@ -52,11 +54,11 @@ public class URLListTest {
     @Test
     public void testChangeURLInTheList() {
         //given
-        list.add(expectedURL);
+        list.add(libraryName, expectedURL);
         URL expectedURL = otherURL;
         //when
-        list.set(0, otherURL);
-        URL actualURL = list.get(0);
+        list.set(libraryName, otherURL);
+        URL actualURL = list.get(libraryName);
         //then
         assertThat(actualURL).isEqualTo(expectedURL);
     }
@@ -64,10 +66,10 @@ public class URLListTest {
     @Test
     public void testRemoveURLFromTheList() {
         //given
-        list.add(expectedURL);
+        list.add(libraryName, expectedURL);
         int expectedSize = 0;
         //when
-        list.remove(0);
+        list.remove(libraryName);
         int actualSize = list.size();
         //then
         assertThat(actualSize).isEqualTo(expectedSize);

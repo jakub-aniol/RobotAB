@@ -8,8 +8,8 @@ import java.net.URL;
 import java.util.Date;
 
 public class Record {
-    Downloader stream;
-    String title;
+    private Downloader stream;
+    private String title;
     private Date date;
 
     public Record(String title, String url, String description) {
@@ -41,5 +41,13 @@ public class Record {
 
     public Date getDate() {
         return date;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAddress() {
+        return stream.getAddress();
     }
 }

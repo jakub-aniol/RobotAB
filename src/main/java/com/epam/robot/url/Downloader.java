@@ -25,4 +25,8 @@ public class Downloader {
         }
         return in;
     }
+
+    public String getAddress() {
+        return url.toString();
+    }
 }

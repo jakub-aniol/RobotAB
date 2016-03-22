@@ -2,6 +2,7 @@ package com.epam.robot.url;
 
 import com.epam.robot.messageBus.MessageProducer;
 import com.epam.robot.messageBus.messages.BookToLogMessage;
+import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.records.Record;
 
@@ -26,15 +27,19 @@ public class RSSParser implements MessageProducer {
 
     private void processURLList() {
         XMLHandler xmlHandler;
+        Book book;
+        URL url;
         DCMetadataParser parser = new DCMetadataParser();
-        for (URL url : urlList){
+        for (String library : urlList){
+            url = urlList.get(library);
             xmlHandler = new XMLHandler(new Downloader(url));
             List<Record> list = xmlHandler.getRecords();
             for (Record r : list){
                 if (parser.isDateInvalid(r)) break;
                 if (parser.isBook(r)){
-                    newestBooks.add(new Book(r));
-                    send(new BookToLogMessage(new Book(r)));
+                    book = new Book(r, library);
+                    newestBooks.add(book);
+                    send(new CheckBookStatusMessage(book));
                 }
             }
         }

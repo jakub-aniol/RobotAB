@@ -14,7 +14,7 @@ public class RSSParserTest {
     @Test
     public void testGetNewestTitles() throws MalformedURLException {
         URLList list = new URLList();
-        list.add(RSSParserTest.class.getResource("/example.rss"));
+        list.add("Example", RSSParserTest.class.getResource("/example.rss"));
         RSSParser rssParser = new RSSParser(list);
         int expectedListSize = 0;
         int booksListSize = rssParser.getNewestBooks().size();
