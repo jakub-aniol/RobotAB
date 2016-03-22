@@ -11,7 +11,7 @@
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
         <File name="bookLogger" fileName="books.log">
-            <PatternLayout pattern="%d{YYYY-MM-DD} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{YYYY-MM-DD} %msg%n"/>
         </File>
     </Appenders>
     <Loggers>
