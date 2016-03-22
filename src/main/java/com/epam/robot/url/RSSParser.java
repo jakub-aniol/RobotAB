@@ -1,16 +1,13 @@
 package com.epam.robot.url;
 
-import com.epam.robot.Book;
-import com.epam.robot.Record;
+import com.epam.robot.records.Book;
+import com.epam.robot.records.Record;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by bartek on 21.03.16.
- */
 public class RSSParser {
     private URLList urlList;
     private List<Book> newestBooks;

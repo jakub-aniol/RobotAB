@@ -1,13 +1,11 @@
 package com.epam.robot.url;
 
-import com.epam.robot.Record;
+import com.epam.robot.records.Record;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
 
 public class DCMetadataParser implements Parser{
     public boolean isBook(Record record) {

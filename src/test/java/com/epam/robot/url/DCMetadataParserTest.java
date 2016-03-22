@@ -1,6 +1,6 @@
 package com.epam.robot.url;
 
-import com.epam.robot.Record;
+import com.epam.robot.records.Record;
 import org.testng.annotations.Test;
 
 import java.io.File;
