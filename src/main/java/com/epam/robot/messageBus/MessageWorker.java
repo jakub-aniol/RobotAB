@@ -16,7 +16,7 @@ public class MessageWorker {
     }
     public void activate (int numberOfWorkers){
         for (int i=0; i<numberOfWorkers || i<30; i++){
-            new Thread(new Worker());
+            new Thread(new Worker()).start();
         }
     }
 

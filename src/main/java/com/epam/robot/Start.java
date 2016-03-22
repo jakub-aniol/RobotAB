@@ -1,5 +1,7 @@
 package com.epam.robot;
 
+import com.epam.robot.library.BooksLogMessageSubscriber;
+import com.epam.robot.library.BooksLogger;
 import com.epam.robot.records.Book;
 import com.epam.robot.url.RSSParser;
 import com.epam.robot.url.URLList;
@@ -14,6 +16,7 @@ public class Start {
     private static final Logger log = LogManager.getLogger("Starting logger");
 
     public static void main(String[] args) throws MalformedURLException {
+        BooksLogMessageSubscriber subscriber = new BooksLogMessageSubscriber(new BooksLogger());
         log.info("first log");
         URLList list = new URLList();
         list.add(new URL("http://jbc.bj.uj.edu.pl/dlibra/results.rss?type=latest&dirids=1&count=100&id=rss_2.0"));
