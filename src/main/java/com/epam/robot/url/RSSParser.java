@@ -29,6 +29,7 @@ public class RSSParser {
             xmlHandler = new XMLHandler(new Downloader(url));
             List<Record> list = xmlHandler.getRecords();
             for (Record r : list){
+                if (parser.isDateInvalid(r)) break;
                 if (parser.isBook(r)){
                     newestBooks.add(new Book(r));
                 }

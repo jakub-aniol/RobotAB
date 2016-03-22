@@ -6,6 +6,7 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.util.Date;
 
 public class DCMetadataParser implements Parser{
     public boolean isBook(Record record) {
@@ -22,5 +23,12 @@ public class DCMetadataParser implements Parser{
             e.printStackTrace();
         }
         return false;
+    }
+
+    public boolean isDateInvalid(Record record) {
+        Date today = new Date(System.currentTimeMillis());
+        Date recordDate = record.getDate();
+        return Math.abs(today.getTime()-recordDate.getTime())>24*60*60*1000;
+        //return today.getYear()==recordDate.getYear() && today.getMonth()==recordDate.getMonth() && Math.abs(today.getDay()-recordDate.getDay())<2;
     }
 }
