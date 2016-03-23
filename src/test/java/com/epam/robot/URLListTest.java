@@ -1,11 +1,12 @@
 package com.epam.robot;
 
 import com.epam.robot.url.URLList;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -14,6 +15,24 @@ public class URLListTest {
     private URLList list;
     private URL expectedURL, otherURL;
     private String libraryName;
+    private File renamed;
+    private File properties;
+
+    @BeforeTest
+    public void setUp() throws Exception {
+        properties = new File("urlList.properties");
+        renamed = new File("org-urlList.properties");
+        if (renamed.exists()) Files.delete(renamed.toPath());
+        properties.renameTo(renamed);
+    }
+
+    @AfterTest
+    public void tearDown() throws Exception {
+        if (properties.exists() && renamed.exists()) {
+            Files.delete(properties.toPath());
+            renamed.renameTo(properties);
+        }
+    }
 
     @BeforeMethod
     public void testPrepareList() {
