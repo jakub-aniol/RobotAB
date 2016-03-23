@@ -31,4 +31,8 @@ public class Book {
         Book other = (Book) obj;
         return title.equals(other.title) && library.equals(other.library);
     }
+
+    public String getTitle() {
+        return title;
+    }
 }

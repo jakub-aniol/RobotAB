@@ -3,19 +3,23 @@ package com.epam.robot.library;
 import com.epam.robot.messageBus.MessageProducer;
 import com.epam.robot.messageBus.Subscriber;
 import com.epam.robot.messageBus.messages.BookToLogMessage;
+import com.epam.robot.messageBus.messages.BooksQueryMessage;
 import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
+import com.epam.robot.messageBus.messages.LoadedBooksMessage;
 import com.epam.robot.records.Book;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BooksLoader implements Subscriber<CheckBookStatusMessage>, MessageProducer {
+public class BooksLoader implements MessageProducer {
     List<Book> books;
 
     public BooksLoader(File file) {
-        subscribe(CheckBookStatusMessage.class);
+        new CheckBookStatusSubscriber(this);
+        new BooksQuerySubscriber(this);
         books = new ArrayList<>();
+        if (!file.exists()) return;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)))) {
             String line;
             while ((line = reader.readLine()) !=null){
@@ -41,8 +45,11 @@ public class BooksLoader implements Subscriber<CheckBookStatusMessage>, MessageP
         return true;
     }
 
-    @Override
     public void receiveMessage(CheckBookStatusMessage message) {
         if (isNotLogged(message.getBook())) send(new BookToLogMessage(message.getBook()));
+    }
+
+    public void receiveMessage(BooksQueryMessage message) {
+        send(new LoadedBooksMessage(books));
     }
 }

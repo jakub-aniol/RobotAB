@@ -8,6 +8,6 @@ public class BooksLogger {
     private static final Logger log = LogManager.getLogger(BooksLogger.class);
 
     public void log(Book book) {
-        log.error(book);
+        log.info(book);
     }
 }

@@ -1,6 +1,7 @@
 package com.epam.robot.messageBus;
 
 import com.epam.robot.messageBus.messages.Message;
+import com.epam.robot.util.NoSubscriberException;
 
 import java.util.List;
 import java.util.Map;
@@ -34,7 +35,14 @@ public class MessageWorker {
                     }
                 }
                 else{
-                    for (Subscriber sub : subscribers.get(current.getClass())){
+                    List<Subscriber<?>> currentSubscribers = subscribers.get(current.getClass());
+                    try {
+                        if (currentSubscribers==null)
+                        throw new NoSubscriberException("No subscriber for type of message: "+current.getClass());
+                    } catch (NoSubscriberException e) {
+                        e.printStackTrace();
+                    }
+                    for (Subscriber sub : currentSubscribers){
                         sub.receiveMessage(current);
                     }
                 }
