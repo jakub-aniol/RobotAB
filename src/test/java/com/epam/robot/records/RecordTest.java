@@ -35,7 +35,7 @@ public class RecordTest {
     @Test
     public void testRecordDate() {
         Record record = RecordParser.parse(item);
-        Date expectedDate = new Date(2016, 03, 21);//"2016-03-21"
+        Date expectedDate = new Date(2016-1900, 03-1, 21);//"2016-03-21"
         Date actualDate = record.getDate();
         assertThat(actualDate).isEqualTo(expectedDate);
     }

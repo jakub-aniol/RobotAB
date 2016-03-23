@@ -10,8 +10,8 @@ public class URLList implements Iterable<String> {
         urls = new HashMap<>();
     }
 
-    public void add(String libraryName, URL example) {
-        urls.put(libraryName, example);
+    public void add(String libraryName, URL url) {
+        urls.put(libraryName, url);
     }
 
     public int size() {
@@ -24,6 +24,7 @@ public class URLList implements Iterable<String> {
 
     public void set(String library, URL url) {
         urls.put(library, url);
+        UserURLsWriter.writeURLsToFile(this);
     }
 
     public void remove(String library) {

@@ -3,6 +3,8 @@ package com.epam.robot;
 import com.epam.robot.library.BooksLoader;
 import com.epam.robot.library.BooksLogMessageSubscriber;
 import com.epam.robot.library.BooksLogger;
+import com.epam.robot.messageBus.Subscriber;
+import com.epam.robot.messageBus.messages.FinishedQueryMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.url.RSSParser;
 import com.epam.robot.url.URLList;
@@ -15,20 +17,34 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-public class Start {
+public class Start implements Subscriber<FinishedQueryMessage>{
     private static final Logger log = LogManager.getLogger("Starting logger");
+    private boolean isInBackground;
 
-    public static void main(String[] args) throws MalformedURLException {
+    public Start() {
+        isInBackground = false;
+        subscribe(FinishedQueryMessage.class);
+    }
+
+    @Override
+    public void receiveMessage(FinishedQueryMessage message) {
+        if (isInBackground) System.exit(0);
+    }
+
+    private void start() {
+        log.info("Search performed");
         new BooksLogMessageSubscriber(new BooksLogger());
         new BooksLoader(new File("books.log"));
-        log.info("first log");
         URLList list = UserURLsReader.loadUserURLs();
-        list.add("JBC", new URL("http://jbc.bj.uj.edu.pl/dlibra/results.rss?type=latest&dirids=1&count=100&id=rss_2.0"));
-        list.add("MBC", new URL("http://mbc.malopolska.pl/dlibra/results.rss?type=latest&dirids=1&count=100&id=rss_2.0"));
         RSSParser parser = new RSSParser(list);
         List<Book> books = parser.getNewestBooks();
-        for (Book book : books){
-            System.out.println(book);
+    }
+
+    public static void main(String[] args) {
+        Start task = new Start();
+        if (args[0].equals("-b")){
+            task.isInBackground= true;
+            task.start();
         }
     }
 }

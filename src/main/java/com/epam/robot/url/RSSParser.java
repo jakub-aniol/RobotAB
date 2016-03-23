@@ -3,6 +3,7 @@ package com.epam.robot.url;
 import com.epam.robot.messageBus.MessageProducer;
 import com.epam.robot.messageBus.messages.BookToLogMessage;
 import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
+import com.epam.robot.messageBus.messages.FinishedQueryMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.records.Record;
 
@@ -36,12 +37,14 @@ public class RSSParser implements MessageProducer {
             List<Record> list = xmlHandler.getRecords();
             for (Record r : list){
                 if (parser.isDateInvalid(r)) break;
-                if (parser.isBook(r)){
+                if (/*parser.isBook(r)*/true){
                     book = new Book(r, library);
+                    System.out.println(book);
                     newestBooks.add(book);
                     send(new CheckBookStatusMessage(book));
                 }
             }
         }
+        send(new FinishedQueryMessage());
     }
 }
