@@ -10,7 +10,7 @@ import java.util.Properties;
 
 public class UserURLsReader {
     public static URLList loadUserURLs(){
-        return loadUserURLs(new File("urlLogs.log"));
+        return loadUserURLs(new File("urlList.properties"));
     }
     public static URLList loadUserURLs(File propertiesFile) {
         URLList list = new URLList();

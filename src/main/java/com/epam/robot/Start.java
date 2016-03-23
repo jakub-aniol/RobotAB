@@ -6,6 +6,7 @@ import com.epam.robot.library.BooksLogger;
 import com.epam.robot.records.Book;
 import com.epam.robot.url.RSSParser;
 import com.epam.robot.url.URLList;
+import com.epam.robot.url.UserURLsReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +22,7 @@ public class Start {
         new BooksLogMessageSubscriber(new BooksLogger());
         new BooksLoader(new File("books.log"));
         log.info("first log");
-        URLList list = new URLList();
+        URLList list = UserURLsReader.loadUserURLs();
         list.add("JBC", new URL("http://jbc.bj.uj.edu.pl/dlibra/results.rss?type=latest&dirids=1&count=100&id=rss_2.0"));
         list.add("MBC", new URL("http://mbc.malopolska.pl/dlibra/results.rss?type=latest&dirids=1&count=100&id=rss_2.0"));
         RSSParser parser = new RSSParser(list);
