@@ -1,10 +1,10 @@
 package com.epam.robot.url;
 
 import com.epam.robot.messageBus.MessageProducer;
-import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
 import com.epam.robot.messageBus.messages.FinishedQueryMessage;
 import com.epam.robot.records.Book;
-import com.epam.robot.records.Record;
+import com.epam.robot.urlWorker.Task;
+import com.epam.robot.urlWorker.TaskProducer;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -17,9 +17,10 @@ import java.util.List;
  * @author Adrian Drabik & Bartosz Klys
  * @since 2016-03-18
  */
-public class RSSParser implements MessageProducer {
+public class RSSParser implements MessageProducer, TaskProducer {
     private URLList urlList;
     private List<Book> newestBooks;
+    private int taskCounter = 0;
 
     /**
      * This constructor creates an object and yet make no connection (creating object is lightweight).
@@ -47,15 +48,24 @@ public class RSSParser implements MessageProducer {
         for (String library : urlList) {
             url = urlList.get(library);
             xmlHandler = new XMLHandler(new Downloader(url));
-            List<Record> list = xmlHandler.getRecords();
-            for (Record r : list) {
-                if (parser.isDateInvalid(r)) break;
-                book = new Book(r, library);
-                System.out.println(book);
-                newestBooks.add(book);
-                send(new CheckBookStatusMessage(book));
-            }
+            offerTask(new Task(xmlHandler.getRecords(), parser, library));
+
         }
         send(new FinishedQueryMessage());
+    }
+
+    /*private synchronized void parseRSS(XMLHandler xmlHandler, DCMetadataParser parser, String library) {
+        Book book;List<Record> list = xmlHandler.getRecords();
+        for (Record r : list) {
+            if (parser.isDateInvalid(r)) break;
+            book = new Book(r, library);
+            System.out.println(book);
+            newestBooks.add(book);
+            send(new CheckBookStatusMessage(book));
+        }
+    }*/
+
+    public synchronized void finishedTask() {
+
     }
 }

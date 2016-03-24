@@ -1,5 +1,7 @@
-package com.epam.robot.messageBus;
+package com.epam.robot.channels;
 
+import com.epam.robot.messageBus.MessageWorker;
+import com.epam.robot.messageBus.Subscriber;
 import com.epam.robot.messageBus.messages.Message;
 
 import java.util.ArrayList;
@@ -18,13 +20,13 @@ import java.util.concurrent.LinkedBlockingDeque;
  * @author Adrian Drabik & Bartosz Klys
  * @since 2016-03-19
  */
-public class Channel {
-    public static final Channel channel = new Channel();
+public class MessageChannel {
+    public static final MessageChannel channel = new MessageChannel();
     private BlockingDeque<Message> channelQueue;
     private Map<Class<? extends Message>, List<Subscriber<? extends Message>>> subscribers;
     MessageWorker worker;
 
-    private Channel() {
+    private MessageChannel() {
         channelQueue = new LinkedBlockingDeque<>();
         subscribers = new HashMap<>();
     }
