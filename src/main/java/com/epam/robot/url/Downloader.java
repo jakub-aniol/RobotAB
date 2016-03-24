@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 
 /**
  * This class is responsible for connect to the url address.
@@ -48,7 +47,7 @@ public class Downloader {
             while ((c=in.read())!=-1) {
                 out.append((char)c);
             }
-            return new ByteArrayInputStream(out.toString().getBytes(StandardCharsets.UTF_8));
+            return new ByteArrayInputStream(out.toString().getBytes("UTF-8"));
         } catch (IOException e) {
             log.error(e.toString());
         }
