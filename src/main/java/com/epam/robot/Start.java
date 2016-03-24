@@ -1,7 +1,7 @@
 package com.epam.robot;
 
 import com.epam.robot.library.BooksLoader;
-import com.epam.robot.library.BooksLogMessageSubscriber;
+import com.epam.robot.messageBus.Subscribers.BooksLogMessageSubscriber;
 import com.epam.robot.library.BooksLogger;
 import com.epam.robot.messageBus.Subscriber;
 import com.epam.robot.messageBus.messages.FinishedQueryMessage;
@@ -14,8 +14,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
 public class Start implements Subscriber<FinishedQueryMessage>{

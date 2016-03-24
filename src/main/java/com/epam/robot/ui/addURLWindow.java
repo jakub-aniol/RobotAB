@@ -51,7 +51,7 @@ public class addURLWindow extends JFrame implements WindowWithGridLayout, Messag
     private void addURLAction(ActionEvent event){
         String library = libraryName.getText();
         String addressText = urlAddress.getText();
-        if (!addressText.startsWith("http://")) addressText = "http://"+urlAddress;
+        if (!addressText.startsWith("http://")) addressText = "http://"+addressText;
         URL address = null;
         try {
             address = new URL(addressText);

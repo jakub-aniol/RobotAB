@@ -1,5 +1,6 @@
-package com.epam.robot.library;
+package com.epam.robot.messageBus.Subscribers;
 
+import com.epam.robot.library.BooksLoader;
 import com.epam.robot.messageBus.Subscriber;
 import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
 

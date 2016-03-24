@@ -1,7 +1,8 @@
 package com.epam.robot.library;
 
 import com.epam.robot.messageBus.MessageProducer;
-import com.epam.robot.messageBus.Subscriber;
+import com.epam.robot.messageBus.Subscribers.BooksQuerySubscriber;
+import com.epam.robot.messageBus.Subscribers.CheckBookStatusSubscriber;
 import com.epam.robot.messageBus.messages.BookToLogMessage;
 import com.epam.robot.messageBus.messages.BooksQueryMessage;
 import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
