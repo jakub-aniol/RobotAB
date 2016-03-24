@@ -1,13 +1,19 @@
 package com.epam.robot.url;
 
-import java.net.URL;
-import java.util.*;
+import com.epam.robot.messageBus.Subscriber;
+import com.epam.robot.messageBus.messages.AddURLMessage;
 
-public class URLList implements Iterable<String> {
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class URLList implements Iterable<String>, Subscriber<AddURLMessage> {
     Map<String, URL> urls;
 
     public URLList() {
         urls = new HashMap<>();
+        subscribe(AddURLMessage.class);
     }
 
     public void add(String libraryName, URL url) {
@@ -34,5 +40,10 @@ public class URLList implements Iterable<String> {
     @Override
     public Iterator<String> iterator() {
         return urls.keySet().iterator();
+    }
+
+    @Override
+    public void receiveMessage(AddURLMessage message) {
+        urls.put(message.getLibrary(), message.getAddress());
     }
 }

@@ -16,8 +16,8 @@ public interface WindowWithGridLayout{
         constraints.gridheight=1;
         constraints.gridx=0;
         constraints.gridy=0;
-        constraints.weightx=50;
-        constraints.weighty=50;
+        constraints.weightx=0;
+        constraints.weighty=0;
         constraints.insets=new Insets(5,5,5,5);
         return constraints;
     }

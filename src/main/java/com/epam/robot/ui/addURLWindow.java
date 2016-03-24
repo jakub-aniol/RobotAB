@@ -1,9 +1,19 @@
 package com.epam.robot.ui;
 
+import com.epam.robot.messageBus.MessageProducer;
+import com.epam.robot.messageBus.messages.AddURLMessage;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-public class addURLWindow extends JFrame implements WindowWithGridLayout {
+public class addURLWindow extends JFrame implements WindowWithGridLayout, MessageProducer {
+
+    private JTextField libraryName;
+    private JTextField urlAddress;
+
     public addURLWindow() {
         super("Add URL...");
         setupWindow();
@@ -25,14 +35,29 @@ public class addURLWindow extends JFrame implements WindowWithGridLayout {
         panel.add(addressLabel, constraints);
         constraints.gridx--;
         constraints.gridy++;
-        JTextField libraryName = new JTextField();
-        libraryLabel.setPreferredSize(new Dimension(150, 20));
+        libraryName = new JTextField();
+        libraryName.setPreferredSize(new Dimension(70, 20));
         panel.add(libraryName,constraints);
         constraints.gridx++;
-        constraints.gridwidth=3;
-        JTextField urlAddress = new JTextField();
+        urlAddress = new JTextField();
         urlAddress.setPreferredSize(new Dimension(350, 20));
         panel.add(urlAddress, constraints);
-        constraints.gridwidth=1;
+        constraints.gridy++;
+        constraints.gridx++;
+        JButton button = new JButton("add");
+        button.addActionListener(this::addURLAction);
+        panel.add(button, constraints);
+    }
+    private void addURLAction(ActionEvent event){
+        String library = libraryName.getText();
+        String addressText = urlAddress.getText();
+        if (!addressText.startsWith("http://")) addressText = "http://"+urlAddress;
+        URL address = null;
+        try {
+            address = new URL(addressText);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        send(new AddURLMessage(library, address));
     }
 }
