@@ -4,9 +4,8 @@ import com.epam.robot.messageBus.MessageProducer;
 import com.epam.robot.messageBus.Subscriber;
 import com.epam.robot.messageBus.messages.BooksQueryMessage;
 import com.epam.robot.messageBus.messages.LoadedBooksMessage;
-import com.epam.robot.records.Book;
+import com.epam.robot.util.ReadmeReader;
 
-import java.util.List;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -38,10 +37,24 @@ public class MainWindow extends JFrame implements WindowWithGridLayout, Subscrib
         JMenuItem addURL = new JMenuItem("Add URL");
         addURL.addActionListener(this::addURLAction);
         menu.add(addURL);
+        JMenu helpMenu = new JMenu("Help..");
+        bar.add(helpMenu);
+        JMenuItem about = new JMenuItem("About");
+        about.addActionListener(this::showHelpAction);
+        helpMenu.add(about);
     }
     private void addURLAction(ActionEvent e){
         addURLWindow window = new addURLWindow();
         window.setVisible(true);
+    }
+    private void showHelpAction(ActionEvent e){
+        JFrame frame = new JFrame("Help");
+        JPanel framePanel = (JPanel) frame.getContentPane();
+        JTextArea textArea = new JTextArea();
+        textArea.setText(ReadmeReader.getReadme());
+        framePanel.add(textArea);
+        frame.pack();
+        frame.setVisible(true);
     }
 
     @Override

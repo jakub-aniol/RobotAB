@@ -11,7 +11,7 @@ public class MessageWorker {
     private final BlockingDeque<Message> channelQueue;
     private final Map<Class<? extends Message>, List<Subscriber<? extends Message>>> subscribers;
 
-    public MessageWorker(BlockingDeque<Message> channelQueue, Map<Class<? extends Message>, List<Subscriber<?>>> subscribers) {
+    public MessageWorker(BlockingDeque<Message> channelQueue, Map<Class<? extends Message>, List<Subscriber<? extends Message>>> subscribers) {
         this.channelQueue=channelQueue;
         this.subscribers = subscribers;
     }
