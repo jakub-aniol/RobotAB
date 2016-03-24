@@ -9,6 +9,7 @@ public class FinishedTaskSubscriber implements Subscriber<FinishedTaskMessage> {
 
     public FinishedTaskSubscriber(RSSParser parser) {
         this.parser = parser;
+        subscribe(FinishedTaskMessage.class);
     }
 
     @Override

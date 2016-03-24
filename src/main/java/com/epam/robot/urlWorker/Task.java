@@ -1,22 +1,20 @@
 package com.epam.robot.urlWorker;
 
-import com.epam.robot.records.Record;
 import com.epam.robot.url.DCMetadataParser;
-
-import java.util.List;
+import com.epam.robot.url.XMLHandler;
 
 public class Task {
-    List<Record> list;
+    XMLHandler list;
     DCMetadataParser parser;
     String library;
 
-    public Task(List<Record> list, DCMetadataParser parser, String library) {
+    public Task(XMLHandler list, DCMetadataParser parser, String library) {
         this.list = list;
         this.parser = parser;
         this.library = library;
     }
 
-    public List<Record> getList() {
+    public XMLHandler getList() {
         return list;
     }
 

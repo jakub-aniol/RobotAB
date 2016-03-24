@@ -1,6 +1,7 @@
 package com.epam.robot.url;
 
 import com.epam.robot.messageBus.MessageProducer;
+import com.epam.robot.messageBus.Subscribers.FinishedTaskSubscriber;
 import com.epam.robot.messageBus.messages.FinishedQueryMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.urlWorker.Task;
@@ -21,6 +22,7 @@ public class RSSParser implements MessageProducer, TaskProducer {
     private URLList urlList;
     private List<Book> newestBooks;
     private int taskCounter = 0;
+    private boolean isQueryFinished;
 
     /**
      * This constructor creates an object and yet make no connection (creating object is lightweight).
@@ -29,6 +31,7 @@ public class RSSParser implements MessageProducer, TaskProducer {
     public RSSParser(URLList urlList) {
         this.urlList = urlList;
         newestBooks = new ArrayList<>();
+        new FinishedTaskSubscriber(this);
     }
 
     /**
@@ -45,13 +48,14 @@ public class RSSParser implements MessageProducer, TaskProducer {
         Book book;
         URL url;
         DCMetadataParser parser = new DCMetadataParser();
+        isQueryFinished = false;
         for (String library : urlList) {
             url = urlList.get(library);
             xmlHandler = new XMLHandler(new Downloader(url));
-            offerTask(new Task(xmlHandler.getRecords(), parser, library));
-
+            taskCounter++;
+            offerTask(new Task(xmlHandler, parser, library));
         }
-        send(new FinishedQueryMessage());
+        isQueryFinished=true;
     }
 
     /*private synchronized void parseRSS(XMLHandler xmlHandler, DCMetadataParser parser, String library) {
@@ -66,6 +70,7 @@ public class RSSParser implements MessageProducer, TaskProducer {
     }*/
 
     public synchronized void finishedTask() {
-
+        taskCounter--;
+        if (taskCounter==0 && isQueryFinished) send(new FinishedQueryMessage());
     }
 }

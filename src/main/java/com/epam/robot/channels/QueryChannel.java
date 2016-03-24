@@ -13,9 +13,10 @@ public class QueryChannel {
     private BlockingDeque<Task> channelQueue;
 
     private QueryChannel() {
+        initialize();
     }
     public static QueryChannel getInstance(){
-        if (isNotInitialized) instance.initialize();
+        //if (isNotInitialized) instance.initialize();
         return instance;
     }
 

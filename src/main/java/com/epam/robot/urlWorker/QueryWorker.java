@@ -6,6 +6,7 @@ import com.epam.robot.messageBus.messages.FinishedTaskMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.records.Record;
 import com.epam.robot.url.DCMetadataParser;
+import com.epam.robot.url.XMLHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,8 +42,9 @@ public class QueryWorker {
             }
         }
 
-        private void parseRSS(List<Record> list, DCMetadataParser parser, String library) {
+        private void parseRSS(XMLHandler handler, DCMetadataParser parser, String library) {
             Book book;
+            List<Record> list = handler.getRecords();
             List<Book> newestBooks = new ArrayList<>();
             for (Record r : list) {
                 if (parser.isDateInvalid(r)) break;
