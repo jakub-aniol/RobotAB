@@ -6,8 +6,6 @@ import com.epam.robot.messageBus.messages.AddURLMessage;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class addURLWindow extends JFrame implements WindowWithGridLayout, MessageProducer {
 
@@ -51,13 +49,6 @@ public class addURLWindow extends JFrame implements WindowWithGridLayout, Messag
     private void addURLAction(ActionEvent event){
         String library = libraryName.getText();
         String addressText = urlAddress.getText();
-        if (!addressText.startsWith("http://")) addressText = "http://"+addressText;
-        URL address = null;
-        try {
-            address = new URL(addressText);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        send(new AddURLMessage(library, address));
+        send(new AddURLMessage(library, addressText));
     }
 }

@@ -1,12 +1,10 @@
 package com.epam.robot.messageBus.messages;
 
-import java.net.URL;
-
 public class AddURLMessage implements Message {
     String library;
-    URL address;
+    String address;
 
-    public AddURLMessage(String library, URL address) {
+    public AddURLMessage(String library, String address) {
         this.library = library;
         this.address = address;
     }
@@ -15,7 +13,7 @@ public class AddURLMessage implements Message {
         return library;
     }
 
-    public URL getAddress() {
+    public String getAddress() {
         return address;
     }
 }

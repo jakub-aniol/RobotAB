@@ -8,10 +8,29 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
+/**
+ * This class has only static methods and is a factory for URLList objects. It can read list of url from .properties file and based on that creates <code>URLList</code> object.
+ *
+ * @author Adrian Drabik & Bartosz Klys
+ * @since 2016-03-19
+ */
+
 public class UserURLsReader {
-    public static URLList loadUserURLs(){
+    /**
+     * This builder return an object based on another constructor with default file.
+     *
+     * @return <code>URLList</code> object.
+     */
+    public static URLList loadUserURLs() {
         return loadUserURLs(new File("urlList.properties"));
     }
+
+    /**
+     * This builder loads URLs from .properties file and creates <Code>URLList</Code> object.
+     *
+     * @param propertiesFile - <Code>File</Code> with list of addresses.
+     * @return <code>URLList</code>
+     */
     public static URLList loadUserURLs(File propertiesFile) {
         URLList list = new URLList();
         if (propertiesFile.exists()) {

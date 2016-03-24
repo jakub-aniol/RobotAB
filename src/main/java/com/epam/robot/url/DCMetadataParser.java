@@ -8,11 +8,22 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.Date;
 
-public class DCMetadataParser implements Parser{
+/**
+ * This class can determine whether a xml entry is a book and was uploaded today or yesterday.
+ *
+ * @author Adrian Drabik & Bartosz Klys
+ * @since 2016-03-19
+ */
+public class DCMetadataParser implements Parser {
+    /**
+     * This method check if the type of the record is a book.
+     * @param record - object with address where record description can be found.
+     * @return <code>true</code> when type of the record is a book.
+     */
     public boolean isBook(Record record) {
         try {
             NodeList types = getNodeList(record.stream(), "dc:type");
-            for (int i=0; i<types.getLength(); i++){
+            for (int i = 0; i < types.getLength(); i++) {
                 if (types.item(i).getTextContent().contains("książka")) return true;
             }
         } catch (SAXException e) {
@@ -25,10 +36,14 @@ public class DCMetadataParser implements Parser{
         return false;
     }
 
+    /**
+     * This method check if the date of the record is recent.
+     * @param record - object with address where record description can be found.
+     * @return <code>true</code> when date of uploading the record is recent.
+     */
     public boolean isDateInvalid(Record record) {
         Date today = new Date(System.currentTimeMillis());
         Date recordDate = record.getDate();
-        return Math.abs(today.getTime()-recordDate.getTime())>24*60*60*1000;
-        //return today.getYear()==recordDate.getYear() && today.getMonth()==recordDate.getMonth() && Math.abs(today.getDay()-recordDate.getDay())<2;
+        return Math.abs(today.getTime() - recordDate.getTime()) > 24 * 60 * 60 * 1000;
     }
 }

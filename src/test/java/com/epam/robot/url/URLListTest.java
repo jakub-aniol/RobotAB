@@ -1,14 +1,16 @@
-package com.epam.robot;
+package com.epam.robot.url;
 
-import com.epam.robot.url.URLList;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class URLListTest {
 
@@ -92,5 +94,12 @@ public class URLListTest {
         int actualSize = list.size();
         //then
         assertThat(actualSize).isEqualTo(expectedSize);
+    }
+
+    @Test
+    public void testSetURLWithStrings() {
+        list.set(libraryName, expectedURL.toString());
+        URL actualURL = list.get(libraryName);
+        assertThat(actualURL).isEqualTo(expectedURL);
     }
 }

@@ -9,6 +9,15 @@ import java.util.Map;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
 
+/**
+ * This class is responsible for handling messages send between objects. It has a map of subscribers which are categorized by type of message they are subscribing.
+ * When a {@code Message} object is sended by a {@Code MessageProducer}, it is queued to a channel and computed by a {@MessageWorker}. By default
+ * there is one separate thread with worker. Any class that need to be added as a subscriber have to implement {@code Subscriber} interface and then
+ * call a method {@link com.epam.robot.messageBus.Subscriber#subscribe(Class<? extends Message>)};
+ *
+ * @author Adrian Drabik & Bartosz Klys
+ * @since 2016-03-19
+ */
 public class Channel {
     public static final Channel channel = new Channel();
     private BlockingDeque<Message> channelQueue;

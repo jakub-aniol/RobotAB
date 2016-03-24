@@ -9,7 +9,7 @@ import java.util.concurrent.BlockingDeque;
 
 public class MessageWorker {
     private final BlockingDeque<Message> channelQueue;
-    private final Map<Class<? extends Message>, List<Subscriber<?>>> subscribers;
+    private final Map<Class<? extends Message>, List<Subscriber<? extends Message>>> subscribers;
 
     public MessageWorker(BlockingDeque<Message> channelQueue, Map<Class<? extends Message>, List<Subscriber<?>>> subscribers) {
         this.channelQueue=channelQueue;

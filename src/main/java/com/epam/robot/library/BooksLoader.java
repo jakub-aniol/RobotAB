@@ -12,10 +12,19 @@ import com.epam.robot.records.Book;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * This class read already logged books from .log file. When no file founded, list of books has size 0.
+ * @author Adrian Drabik & Bartosz Klys
+ * @since 2016-03-19
+ */
 
-public class BooksLoader implements MessageProducer {
+public final class BooksLoader implements MessageProducer {
     List<Book> books;
 
+    /**
+     * Constructor creates BooksLoader object based of information founded in file.
+     * @param file - no default file for this class.
+     */
     public BooksLoader(File file) {
         new CheckBookStatusSubscriber(this);
         new BooksQuerySubscriber(this);
@@ -33,6 +42,10 @@ public class BooksLoader implements MessageProducer {
         }
     }
 
+    /**
+     * This method provides information about number of already logged books.
+     * @return int number of books logged.
+     */
     public int numberOfBooks() {
         return books.size();
     }
@@ -46,10 +59,18 @@ public class BooksLoader implements MessageProducer {
         return true;
     }
 
+    /**
+     * Method for subscriber helper class.
+     * @param message from subscriber class.
+     */
     public void receiveMessage(CheckBookStatusMessage message) {
         if (isNotLogged(message.getBook())) send(new BookToLogMessage(message.getBook()));
     }
 
+    /**
+     * Method for subscriber helper class.
+     * @param message from subscriber class.
+     */
     public void receiveMessage(BooksQueryMessage message) {
         send(new LoadedBooksMessage(books));
     }
