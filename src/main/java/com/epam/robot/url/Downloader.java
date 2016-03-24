@@ -3,9 +3,12 @@ package com.epam.robot.url;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 /**
  * This class is responsible for connect to the url address.
@@ -16,7 +19,6 @@ import java.net.URL;
 public class Downloader {
     private static final Logger log = LogManager.getLogger();
     private URL url;
-    private static int counter;
 
     /**
      * Creates an object with information about URL address of future connection.
@@ -46,10 +48,7 @@ public class Downloader {
             while ((c=in.read())!=-1) {
                 out.append((char)c);
             }
-            FileOutputStream output = new FileOutputStream(new File("download"+counter));
-            InputStream input = new FileInputStream(new File("download"+counter));
-            counter++;
-            return input;
+            return new ByteArrayInputStream(out.toString().getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
             log.error(e.toString());
         }
