@@ -35,8 +35,45 @@ public class RecordTest {
     @Test
     public void testRecordDate() {
         Record record = RecordParser.parse(item);
-        Date expectedDate = new Date(2016-1900, 03-1, 21);//"2016-03-21"
+        Date expectedDate = new Date(2016 - 1900, 03 - 1, 21);//"2016-03-21"
         Date actualDate = record.getDate();
         assertThat(actualDate).isEqualTo(expectedDate);
     }
+
+    @Test
+    public void testIfWrongUrldoesNotAllowToCreateObiect() {
+        String title = "tytul";
+        String addressUrl = "ewewww";
+        String description = "Podtarnowskie Wieści : miesięcznik Gminy Tarnów. 1994, nr 1\n" + "Data publikacji w Bibliotece cyfrowej: 2016-03-21";
+
+
+        Record record = new Record(title, addressUrl, description, title);
+        //when
+        boolean status = false;
+        try {
+            InputStream result = record.stream();
+        } catch(NullPointerException e) {
+            status = true;
+        }
+        //then
+        assertThat(status).isTrue();
+    }
+
+    /*@Test
+    public void testsGetStreamShouldThrowException_ForWrongURLAddress() {
+        //given
+        boolean status = false;
+        Downloader downloader = null;
+
+        try {
+            downloader = new Downloader(new URL("http://www.dsdssdsd.pl"));
+        } catch (MalformedURLException e) {
+        }
+        //when
+        InputStream is = downloader.getStream();
+
+        //then
+        assertThat(is).isEqualTo(null);
+    }*/
+
 }

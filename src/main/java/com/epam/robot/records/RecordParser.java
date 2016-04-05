@@ -21,6 +21,7 @@ public class RecordParser {
         String url = "";
         String title = "";
         String description = "";
+        String type = "";
         for (int x = 0; x < children.getLength(); x++) {
             node = children.item(x);
             if (node.getNodeName().equals("link"))
@@ -29,7 +30,9 @@ public class RecordParser {
                 title = node.getTextContent();
             else if (node.getNodeName().equals("description"))
                 description = node.getTextContent();
+            else if(node.getNodeName().equals("type"))
+                type = node.getTextContent();
         }
-        return (new Record(title, url, description));
+        return (new Record(title, url, description, type));
     }
 }

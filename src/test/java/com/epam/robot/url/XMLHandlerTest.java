@@ -8,7 +8,8 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class XMLHandlerTest {
 
@@ -28,4 +29,6 @@ public class XMLHandlerTest {
         int actualLinksSize = xmlHandler.getRecords().size();
         assertThat(actualLinksSize).isEqualTo(expectedLinksListSize);
     }
+
+
 }

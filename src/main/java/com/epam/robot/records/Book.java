@@ -6,7 +6,7 @@ package com.epam.robot.records;
  * @since 2016-03-19
  */
 public class Book {
-    String title, library;
+    String title, library, profile;
 
     /**
      * This constructor creates object based on Record class and library name.

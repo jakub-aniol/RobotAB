@@ -36,7 +36,7 @@ public class DCMetadataParser implements Parser {
         return false;
     }
 
-    /**
+        /**
      * This method check if the date of the record is recent.
      * @param record - object with address where record description can be found.
      * @return <code>true</code> when date of uploading the record is recent.

@@ -1,8 +1,5 @@
 package com.epam.robot.url;
 
-import com.epam.robot.url.Downloader;
-import com.epam.robot.url.URLList;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -11,7 +8,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.*;
 
 public class DownloaderTest {
 
@@ -24,5 +20,22 @@ public class DownloaderTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testsGetStreamShouldThrowException_ForWrongURLAddress() {
+        //given
+        boolean status = false;
+        Downloader downloader = null;
+
+        try {
+            downloader = new Downloader(new URL("http://www.wp.pl"));
+        } catch (MalformedURLException e) {
+        }
+        //when
+        InputStream is = downloader.getStream();
+
+        //then
+        assertThat(is).isEqualTo(null);
     }
 }

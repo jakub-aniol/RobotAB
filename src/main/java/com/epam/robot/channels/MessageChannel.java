@@ -21,7 +21,9 @@ import java.util.concurrent.LinkedBlockingDeque;
  * @since 2016-03-19
  */
 public class MessageChannel {
+
     public static final MessageChannel channel = new MessageChannel();
+
     private BlockingDeque<Message> channelQueue;
     private Map<Class<? extends Message>, List<Subscriber<? extends Message>>> subscribers;
     MessageWorker worker;

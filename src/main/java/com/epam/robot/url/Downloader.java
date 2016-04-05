@@ -47,6 +47,7 @@ public class Downloader {
             while ((c=in.read())!=-1) {
                 out.append((char)c);
             }
+
             return new ByteArrayInputStream(out.toString().getBytes("UTF-8"));
         } catch (IOException e) {
             log.error(e.toString());

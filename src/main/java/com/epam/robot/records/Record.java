@@ -17,6 +17,7 @@ public class Record {
     private Downloader stream;
     private String title;
     private Date date;
+    private String type;
 
     /**
      * Creates object based on three parameters.
@@ -24,7 +25,7 @@ public class Record {
      * @param url - address where book description can be found (in DublinCore format).
      * @param description - description about records in a library.
      */
-    public Record(String title, String url, String description) {
+    public Record(String title, String url, String description, String type) {
         this.title = title;
         date = getDateFromDescription(description);
         try {
@@ -32,6 +33,7 @@ public class Record {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+        this.type = type;
     }
 
     /**
@@ -69,13 +71,22 @@ public class Record {
         return title;
     }
 
+
+    /**
+     * This method returns a type of the book.
+     * @return <code>String</code> with title of the book.
+     */
+    public String getType() {
+        return type;
+    }
+
     /**
      * This method returns a String with the address where book description can be found.
      * @return <code>String</code> with address.
-     */
+     *//*
     public String getAddress() {
         return stream.getAddress();
-    }
+    }*/
 
     @Override
     public String toString() {

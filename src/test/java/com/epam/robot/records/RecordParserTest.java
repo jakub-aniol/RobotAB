@@ -2,12 +2,12 @@ package com.epam.robot.records;
 
 import org.testng.annotations.Test;
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -20,4 +20,6 @@ public class RecordParserTest {
             assertThat(record).isNotNull();
         }
     }
+
+
 }
