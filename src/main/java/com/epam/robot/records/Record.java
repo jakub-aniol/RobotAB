@@ -5,6 +5,7 @@ import com.epam.robot.url.Downloader;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -17,15 +18,16 @@ public class Record {
     private Downloader stream;
     private String title;
     private Date date;
-    private String type;
+    private ArrayList<String> subject;
 
     /**
      * Creates object based on three parameters.
      * @param title - title of the book.
      * @param url - address where book description can be found (in DublinCore format).
      * @param description - description about records in a library.
+     * @param subject - contains keyWords of the book.
      */
-    public Record(String title, String url, String description, String type) {
+    public Record(String title, String url, String description, ArrayList<String> subject) {
         this.title = title;
         date = getDateFromDescription(description);
         try {
@@ -33,8 +35,26 @@ public class Record {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        this.type = type;
+        this.subject = subject;
     }
+
+    /**
+     * Creates object based on three parameters.
+     * @param title - title of the book.
+     * @param url - address where book description can be found (in DublinCore format).
+     * @param description - description about records in a library.
+     */
+    public Record(String title, String url, String description){
+        this.title = title;
+        date = getDateFromDescription(description);
+        try {
+            stream = new Downloader(new URL(url));
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
     /**
      * This method returns a stream with description of the book in DublinCore format.
@@ -76,8 +96,8 @@ public class Record {
      * This method returns a type of the book.
      * @return <code>String</code> with title of the book.
      */
-    public String getType() {
-        return type;
+    public ArrayList<String> getSubjectt() {
+        return subject;
     }
 
     /**

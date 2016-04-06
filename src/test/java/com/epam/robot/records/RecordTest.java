@@ -47,7 +47,7 @@ public class RecordTest {
         String description = "Podtarnowskie Wieści : miesięcznik Gminy Tarnów. 1994, nr 1\n" + "Data publikacji w Bibliotece cyfrowej: 2016-03-21";
 
 
-        Record record = new Record(title, addressUrl, description, title);
+        Record record = new Record(title, addressUrl, description);
         //when
         boolean status = false;
         try {

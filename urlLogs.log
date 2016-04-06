@@ -19,3 +19,5 @@
 13:43:26.536 [main] ERROR com.epam.robot.url.Downloader - java.net.UnknownHostException: www.dsdssdsd.pl
 16:14:30.110 [main] ERROR com.epam.robot.url.Downloader - java.net.UnknownHostException: www.xsxs.pl
 11:44:12.749 [main] ERROR com.epam.robot.url.Downloader - java.net.UnknownHostException: www.xsxs.pl
+11:50:05.546 [Thread-16] ERROR com.epam.robot.url.Downloader - java.net.SocketException: Unexpected end of file from server
+12:57:11.751 [Thread-30] ERROR com.epam.robot.url.Downloader - java.net.SocketException: Unexpected end of file from server

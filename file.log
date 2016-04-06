@@ -28,3 +28,284 @@
 12:13:23.765 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|Berol. Ms. Gall. Qu. 98
 12:13:23.764 [Thread-55] INFO  com.epam.robot.library.BooksLogger - JBC|Berol. Ms. Gall. Fol. 224
 12:13:23.764 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|Berol. Ms. Gall. Fol. 231
+10:06:02.733 [main] INFO  Starting logger - Search performed
+10:09:41.938 [main] INFO  Starting logger - Search performed
+10:11:35.704 [main] INFO  Starting logger - Search performed
+10:12:22.483 [main] INFO  Starting logger - Search performed
+10:14:58.872 [main] INFO  Starting logger - Search performed
+10:16:30.011 [main] INFO  Starting logger - Search performed
+10:16:52.417 [main] INFO  Starting logger - Search performed
+10:17:54.834 [main] INFO  Starting logger - Search performed
+10:18:38.000 [main] INFO  Starting logger - Search performed
+10:19:26.631 [main] INFO  Starting logger - Search performed
+10:22:19.144 [main] INFO  Starting logger - Search performed
+10:22:49.518 [main] INFO  Starting logger - Search performed
+10:24:03.169 [main] INFO  Starting logger - Search performed
+10:25:20.083 [main] INFO  Starting logger - Search performed
+10:29:42.117 [main] INFO  Starting logger - Search performed
+10:30:17.351 [main] INFO  Starting logger - Search performed
+10:31:56.625 [main] INFO  Starting logger - Search performed
+10:33:52.539 [main] INFO  Starting logger - Search performed
+10:37:56.090 [main] INFO  Starting logger - Search performed
+10:38:41.449 [main] INFO  Starting logger - Search performed
+10:39:16.685 [main] INFO  Starting logger - Search performed
+10:39:40.206 [main] INFO  Starting logger - Search performed
+10:40:20.622 [main] INFO  Starting logger - Search performed
+10:42:14.216 [main] INFO  Starting logger - Search performed
+10:45:28.736 [main] INFO  Starting logger - Search performed
+10:46:30.206 [main] INFO  Starting logger - Search performed
+10:46:50.649 [main] INFO  Starting logger - Search performed
+10:47:48.043 [main] INFO  Starting logger - Search performed
+10:58:47.303 [main] INFO  Starting logger - Search performed
+11:06:40.885 [main] INFO  Starting logger - Search performed
+11:08:38.160 [main] INFO  Starting logger - Search performed
+11:14:33.627 [main] INFO  Starting logger - Search performed
+11:15:30.330 [main] INFO  Starting logger - Search performed
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 44 [nakÅad pierwszy skonfiskowany]
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznejÂ 44 [nakÅad pierwszy skonfiskowany]
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 43
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 42
+11:15:40.941 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 39
+11:15:40.941 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 38
+11:15:40.941 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 37
+11:15:40.941 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 36
+11:15:40.941 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 35
+11:15:40.942 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 34
+11:15:40.942 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 33
+11:15:40.942 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 31
+11:15:40.942 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 30
+11:15:40.942 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 29
+11:15:40.942 [Thread-57] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 27
+11:15:40.942 [Thread-57] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 26
+11:15:40.942 [Thread-33] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 23
+11:15:40.942 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 21
+11:15:40.942 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 20
+11:15:40.942 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 19 [nakÅad pierwszy skonfiskowany]
+11:15:40.943 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 17
+11:15:40.943 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 16
+11:15:40.943 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 15
+11:15:40.943 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 14
+11:15:40.943 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 13
+11:15:40.943 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 12
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 11
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 10
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 9
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 8
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 7
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 6
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 5
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 4
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 3
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 2
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 1
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2015, nr 3
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2015, nr 2
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2015, nr 1
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2012, nr 4
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2012, nr 3
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2012, nr 2
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2012, nr 1
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2011, nr 4
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2011, nr 3
+11:15:40.944 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2011, nr 2
+11:15:40.945 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|Biuletyn UrzÄdu Regulacji Energetyki. 2011, nr 1
+11:15:40.945 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|2014, KÃ¶zÃ©p-EurÃ³pai KÃ¶zlemÃ©nyek : tÃ¶rtÃ©nÃ©szek, geogrÃ¡fusok Ã©s regionalistÃ¡k folyÃ³irata. Evf. 7, 2014, sz. 1
+11:15:40.945 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|KÃ¶zÃ©p-EurÃ³pai KÃ¶zlemÃ©nyek : tÃ¶rtÃ©nÃ©szek, geogrÃ¡fusok Ã©s regionalistÃ¡k folyÃ³irata. Evf. 6, 2013, sz. 4
+11:15:40.945 [Thread-56] INFO  com.epam.robot.library.BooksLogger - JBC|KÃ¶zÃ©p-EurÃ³pai KÃ¶zlemÃ©nyek : tÃ¶rtÃ©nÃ©szek, geogrÃ¡fusok Ã©s regionalistÃ¡k folyÃ³irata. Evf. 6, 2013, sz. 3
+11:15:40.942 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 18
+11:15:40.942 [Thread-33] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 22
+11:15:40.945 [Thread-34] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 24
+11:15:40.942 [Thread-57] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 25
+11:15:40.942 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 28
+11:15:40.942 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 32
+11:15:40.940 [Thread-60] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 40
+11:15:40.940 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 41
+11:15:40.951 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.951 [Thread-35] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.951 [Thread-36] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.951 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.951 [Thread-55] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.952 [Thread-54] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.952 [Thread-53] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.952 [Thread-52] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.952 [Thread-41] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-42] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-47] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-45] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-43] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-44] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-49] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-50] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-48] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-46] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-40] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-39] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:15:40.953 [Thread-38] INFO  com.epam.robot.library.BooksLogger - JBC|GÅos (âNaprzÃ³dâ). Organ centralny polskiej partyi socyalno-demokratycznej
+11:21:04.846 [main] INFO  Starting logger - Search performed
+11:24:34.063 [main] INFO  Starting logger - Search performed
+11:44:20.516 [main] INFO  Starting logger - Search performed
+11:46:38.224 [main] INFO  Starting logger - Search performed
+11:50:07.250 [main] INFO  Starting logger - Search performed
+11:50:05.546 [Thread-16] ERROR com.epam.robot.url.Downloader - java.net.SocketException: Unexpected end of file from server
+11:51:32.419 [main] INFO  Starting logger - Search performed
+11:52:06.348 [main] INFO  Starting logger - Search performed
+11:52:24.893 [main] INFO  Starting logger - Search performed
+11:56:39.428 [main] INFO  Starting logger - Search performed
+11:56:50.127 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 66
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 65
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 64
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 63
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 62
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 61
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 60
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 59
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 58
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 57
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 56
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 55
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 54
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 53
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 52
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 51
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 50
+11:56:50.128 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 49
+11:56:50.129 [Thread-38] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 47
+11:56:50.129 [Thread-38] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 46
+11:56:50.129 [Thread-38] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 45
+11:56:50.135 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 48
+11:56:50.127 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 67
+11:57:40.787 [main] INFO  Starting logger - Search performed
+11:58:30.286 [main] INFO  Starting logger - Search performed
+12:00:29.276 [main] INFO  Starting logger - Search performed
+12:02:48.346 [main] INFO  Starting logger - Search performed
+12:03:22.243 [main] INFO  Starting logger - Search performed
+12:04:48.085 [main] INFO  Starting logger - Search performed
+12:05:23.838 [main] INFO  Starting logger - Search performed
+12:06:11.834 [main] INFO  Starting logger - Search performed
+12:08:48.292 [main] INFO  Starting logger - Search performed
+12:09:46.383 [main] INFO  Starting logger - Search performed
+12:12:34.361 [main] INFO  Starting logger - Search performed
+12:15:07.549 [main] INFO  Starting logger - Search performed
+12:17:29.871 [main] INFO  Starting logger - Search performed
+12:17:57.790 [main] INFO  Starting logger - Search performed
+12:22:55.031 [main] INFO  Starting logger - Search performed
+12:36:21.835 [main] INFO  Starting logger - Search performed
+12:36:27.567 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 71 [po konfiskacie nakÅad drugi]
+12:36:27.567 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 160
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 159
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 158
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 157
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 156
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 155
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 154
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 153
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 152
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 150
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 149
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 148
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 147
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 146
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 145
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 144
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 143
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 142
+12:36:27.568 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 141
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 140
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 139
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 138
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 137
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 136
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 135
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 134
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 133
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 131
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 130 [nakÅad pierwszy skonfiskowany]
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 129
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 128
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 127
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 126
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 125
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 124
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 123
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 122
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 121
+12:36:27.569 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 120
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 119
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 118 [po konfiskacie nakÅad drugi]
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 118 [nakÅad pierwszy skonfiskowany]
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 117
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 116
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 115
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 114
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 113
+12:36:27.570 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 111
+12:36:27.570 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 110
+12:36:27.570 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 109
+12:36:27.570 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 108
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 107
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 106
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 105
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 104
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 103
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 102
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 101
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 100
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 99
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 98
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 97
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 96
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 95
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 94
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 93
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 92
+12:36:27.571 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 91
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 90
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 89
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 88
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 87
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 86
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 85
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 84
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 83
+12:36:27.572 [Thread-58] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 82 [po konfiskacie nakÅad drugi]
+12:36:27.572 [Thread-60] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 132
+12:36:27.568 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 151
+12:36:27.570 [Thread-59] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 112
+12:36:27.579 [Thread-47] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 71 [nakÅad pierwszy skonfiskowany]
+12:36:27.579 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 178 (wydanie poranne)
+12:36:27.579 [Thread-33] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 177 (wydanie wieczorne)
+12:36:27.579 [Thread-34] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 176
+12:36:27.579 [Thread-35] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 175
+12:36:27.579 [Thread-36] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 174
+12:36:27.579 [Thread-37] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 173
+12:36:27.579 [Thread-38] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 172
+12:36:27.580 [Thread-39] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 171
+12:36:27.580 [Thread-40] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 170
+12:36:27.580 [Thread-41] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 169
+12:36:27.580 [Thread-50] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 161
+12:36:27.581 [Thread-49] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 162
+12:36:27.581 [Thread-48] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 163
+12:36:27.581 [Thread-46] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 164
+12:36:27.581 [Thread-45] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 165
+12:36:27.581 [Thread-44] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 166
+12:36:27.581 [Thread-43] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 167
+12:36:27.581 [Thread-42] INFO  com.epam.robot.library.BooksLogger - JBC|NaprzÃ³d : organ centralny polskiej partyi socyalno-demokratycznej. 1914, nrÂ 168
+12:57:11.751 [Thread-30] ERROR com.epam.robot.url.Downloader - java.net.SocketException: Unexpected end of file from server
+13:09:39.211 [main] INFO  Starting logger - Search performed
+13:12:22.078 [main] INFO  Starting logger - Search performed
+13:13:39.155 [main] INFO  Starting logger - Search performed
+13:16:42.710 [main] INFO  Starting logger - Search performed
+13:18:06.029 [main] INFO  Starting logger - Search performed
+13:19:51.647 [main] INFO  Starting logger - Search performed
+13:25:39.740 [main] INFO  Starting logger - Search performed
+13:36:15.843 [main] INFO  Starting logger - Search performed
+13:37:18.417 [main] INFO  Starting logger - Search performed
+13:38:19.634 [main] INFO  Starting logger - Search performed
+13:38:39.955 [main] INFO  Starting logger - Search performed
+13:42:16.573 [main] INFO  Starting logger - Search performed
+13:52:43.020 [main] INFO  Starting logger - Search performed
+13:52:53.071 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|Rodzinka, Marcin., HIV i AIDS twÃ³j przewodnik
+13:52:53.071 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|Innowacje 2013 innowacje ÅÃ³dzkie 2013 : budowa spoÅeczeÅstwa informacyjnego w regionach : perspektywa koÅca okresu programowania 2007-2013 : praca zbiorowa
+13:52:53.058 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|Rak, Agata., A serce swoje prawa ma... aforyzmy
