@@ -30,6 +30,7 @@ public class RecordParser {
         String url = "";
         String title = "";
         String description = "";
+        String type = "";
         ArrayList<String>keyWord = new ArrayList<>();
 
         for (int x = 0; x < children.getLength(); x++) {
@@ -39,6 +40,7 @@ public class RecordParser {
                 try {
                     Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new Downloader(new URL(url)).getStream()); //czy to ubrać w metodę???
                     keyWord = keyWordParser(document);
+                    type = typeOfBookParser(document);
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -55,26 +57,43 @@ public class RecordParser {
                 description = node.getTextContent();
 
         }
-        return (new Record(title, url, description, keyWord));
+        return (new Record(title, url, description, type, keyWord));
 
 
     }
 
     static ArrayList<String>  keyWordParser (Document document){
         ArrayList<String>keyWordPars = new ArrayList<>();
-        NodeList nodeList = document.getElementsByTagName("dc:subject");
 
-        if(nodeList.getLength()==0) {
+        NodeList nodeList = document.getElementsByTagName("dc:subject");
+        final String NO_KEY_WORDS = "brak słów kluczowych";
+        if(nodeList.getLength()!=0) {
             for (int y = 0; y < nodeList.getLength(); y++) {
                 keyWordPars.add(nodeList.item(y).getTextContent());
             }
             return keyWordPars;
+        }
+        else
+        keyWordPars.add(NO_KEY_WORDS);
+        return keyWordPars;
+    }
+
+    static String typeOfBookParser (Document document){
+        String typeOfBookPars = new String();
+        final String NO_TYPE_OF_BOOK_PAR = "brak przypisanej kategorii";
+        NodeList nodeList = document.getElementsByTagName("dc:type");
+
+        if(nodeList.getLength()!=0) {
+            for (int y = 0; y < nodeList.getLength(); y++) {
+                typeOfBookPars = nodeList.item(y).getTextContent();
+            }
+            return typeOfBookPars;
 
         }
 
         else
-        keyWordPars.add("brak słów kluczowych");
-        return keyWordPars;
+            return NO_TYPE_OF_BOOK_PAR;
+
     }
 
 

@@ -18,6 +18,7 @@ public class Record {
     private Downloader stream;
     private String title;
     private Date date;
+    private String type;
     private ArrayList<String> keyWords;
 
     /**
@@ -26,8 +27,9 @@ public class Record {
      * @param url - address where book description can be found (in DublinCore format).
      * @param description - description about records in a library.
      * @param keyWords - contains keyWords of the book.
+     * @param type - contains book categories
      */
-    public Record(String title, String url, String description, ArrayList<String> keyWords) {
+    public Record(String title, String url, String description, String type, ArrayList<String> keyWords) {
         this.title = title;
         date = getDateFromDescription(description);
         try {
@@ -36,6 +38,7 @@ public class Record {
             e.printStackTrace();
         }
         this.keyWords = keyWords;
+        this.type = type;
 
     }
 
@@ -85,6 +88,14 @@ public class Record {
     }
 
     /**
+     * This method returns a type/category of the book.
+     * @return <code>String</code>.
+     */
+    public String getType() {
+        return this.type;
+    }
+
+    /**
      * This method returns a title of the book.
      * @return <code>String</code> with title of the book.
      */
@@ -94,12 +105,19 @@ public class Record {
 
 
     /**
-     * This method returns a type of the book.
-     * @return <code>String</code> with title of the book.
+     * This method returns key words of the book.
+     * @return <code>ArrayList of Strings</code>.
      */
     public ArrayList<String> getKeyWords() {
-        return keyWords;
+        return this.keyWords;
     }
+
+
+
+
+
+
+
 
     /**
      * This method returns a String with the address where book description can be found.

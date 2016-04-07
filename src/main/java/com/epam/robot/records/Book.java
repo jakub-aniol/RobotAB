@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @since 2016-03-19
  */
 public class Book {
-    String title, library;
+    String title, type, library;
     ArrayList<String> keyWords;
 
 
@@ -22,6 +22,7 @@ public class Book {
     public Book(Record record, String library) {
         title = record.getTitle();
         keyWords = record.getKeyWords();
+        type = record.getType();
         this.library = library;
     }
 
@@ -65,7 +66,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return library + "|" + title + "|" + keyWords;
+        return "Biblioteka= " + library + " |Tytuł= " + title + " \n|Typ= " + type + " |Słowa Kluczowe= " + keyWords;
     }
 
     @Override

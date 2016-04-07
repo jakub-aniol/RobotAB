@@ -330,3 +330,8 @@
 11:47:44.580 [main] INFO  Starting logger - Search performed
 11:48:46.455 [main] INFO  Starting logger - Search performed
 11:49:17.183 [main] INFO  Starting logger - Search performed
+12:45:09.237 [main] INFO  Starting logger - Search performed
+12:45:23.737 [Thread-57] INFO  com.epam.robot.library.BooksLogger - MBC|Duch Trzynastaka 1920|[CTK, DruÅ¼yna harcerska im. Zawiszy Czarnego, Czarna13 Krakowska, harcerze, kronika, harcerstwo]
+12:45:23.743 [Thread-36] INFO  com.epam.robot.library.BooksLogger - MBC|Pamietnik 1920-1923|[harcerstwo, harcerze, CTK, DruÅ¼yna harcerska im. Zawiszy Czarnego, Czarna13 Krakowska, kronika]
+12:47:56.489 [main] INFO  Starting logger - Search performed
+12:48:22.687 [main] INFO  Starting logger - Search performed
