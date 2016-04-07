@@ -36,6 +36,7 @@ public class Record {
             e.printStackTrace();
         }
         this.keyWords = keyWords;
+
     }
 
     /**

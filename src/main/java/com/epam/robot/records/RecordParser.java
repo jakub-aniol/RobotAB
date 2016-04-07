@@ -38,7 +38,7 @@ public class RecordParser {
                 url = node.getTextContent().replace("docmetadata?from=rss&", "rdf.xml?type=e&");
                 try {
                     Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new Downloader(new URL(url)).getStream()); //czy to ubrać w metodę???
-                    keyWordParser(document);
+                    keyWord = keyWordParser(document);
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -63,9 +63,17 @@ public class RecordParser {
     static ArrayList<String>  keyWordParser (Document document){
         ArrayList<String>keyWordPars = new ArrayList<>();
         NodeList nodeList = document.getElementsByTagName("dc:subject");
-        for(int y = 0; y<nodeList.getLength(); y++){
-            keyWordPars.add(nodeList.item(y).getTextContent());
-    }
+
+        if(nodeList.getLength()==0) {
+            for (int y = 0; y < nodeList.getLength(); y++) {
+                keyWordPars.add(nodeList.item(y).getTextContent());
+            }
+            return keyWordPars;
+
+        }
+
+        else
+        keyWordPars.add("brak słów kluczowych");
         return keyWordPars;
     }
 

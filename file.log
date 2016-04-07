@@ -312,3 +312,21 @@
 09:13:37.422 [main] INFO  Starting logger - Search performed
 09:13:47.399 [Thread-36] INFO  com.epam.robot.library.BooksLogger - JBC|Humboldt, Alexander von (1769-1859), Korrekturbogen des Kosmos [caÅoÅÄ]
 09:42:09.084 [main] INFO  Starting logger - Search performed
+10:23:25.999 [main] INFO  Starting logger - Search performed
+10:23:44.418 [main] INFO  Starting logger - Search performed
+11:08:31.168 [main] INFO  Starting logger - Search performed
+11:08:41.594 [Thread-60] INFO  com.epam.robot.library.BooksLogger - JBC|KochaÅska, Magdalena, JÄzyk i komunikacja : skala obserwacyjna dla nauczycieli : podrÄcznik|[]
+11:08:42.392 [Thread-50] INFO  com.epam.robot.library.BooksLogger - MBC|Kronika Czarnej Trzynastki 1979-1980|[]
+11:18:49.058 [main] INFO  Starting logger - Search performed
+11:21:51.325 [main] INFO  Starting logger - Search performed
+11:39:37.672 [main] INFO  Starting logger - Search performed
+11:39:52.419 [Thread-57] INFO  com.epam.robot.library.BooksLogger - MBC|Kronika Czarnej Trzynastki 1972-1973|[]
+11:42:07.522 [main] INFO  Starting logger - Search performed
+11:42:12.601 [Thread-60] INFO  com.epam.robot.library.BooksLogger - MBC|Kronika Czarnej Trzynastki 1973--1974|[DruÅ¼yna harcerska im. Zawiszy Czarnego, kronika, harcerstwo, harcerze, CTK, Czarna13 Krakowska]
+11:44:06.512 [main] INFO  Starting logger - Search performed
+11:46:04.039 [main] INFO  Starting logger - Search performed
+11:46:32.811 [Thread-44] INFO  com.epam.robot.library.BooksLogger - MBC|Kronika Czarnej Trzynastki 1978-1979|[CTK, Czarna13 Krakowska, DruÅ¼yna harcerska im. Zawiszy Czarnego, harcerze, kronika, harcerstwo]
+11:46:51.258 [main] INFO  Starting logger - Search performed
+11:47:44.580 [main] INFO  Starting logger - Search performed
+11:48:46.455 [main] INFO  Starting logger - Search performed
+11:49:17.183 [main] INFO  Starting logger - Search performed

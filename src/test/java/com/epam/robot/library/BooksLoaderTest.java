@@ -34,7 +34,11 @@ public class BooksLoaderTest {
     @Test
     public void testIfBookIsBotLogged() {
         //given
-        Book book = new Book("JBC|Nowy");
+        /*ArrayList<String>keyWords = new ArrayList<>();
+        keyWords.add("nowy");
+        keyWords.add("stary");
+        Record record = new Record("http://www.wpolityce.pl","JBC|Nowy","Decription", keyWords);*/
+        Book book = new Book(/*record,*/ "JBC|Nowy");
         boolean result;
         boolean notLogged = true;
         //when
