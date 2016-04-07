@@ -309,3 +309,6 @@
 13:52:53.071 [Thread-51] INFO  com.epam.robot.library.BooksLogger - JBC|Rodzinka, Marcin., HIV i AIDS twÃ³j przewodnik
 13:52:53.071 [Thread-32] INFO  com.epam.robot.library.BooksLogger - JBC|Innowacje 2013 innowacje ÅÃ³dzkie 2013 : budowa spoÅeczeÅstwa informacyjnego w regionach : perspektywa koÅca okresu programowania 2007-2013 : praca zbiorowa
 13:52:53.058 [Thread-31] INFO  com.epam.robot.library.BooksLogger - JBC|Rak, Agata., A serce swoje prawa ma... aforyzmy
+09:13:37.422 [main] INFO  Starting logger - Search performed
+09:13:47.399 [Thread-36] INFO  com.epam.robot.library.BooksLogger - JBC|Humboldt, Alexander von (1769-1859), Korrekturbogen des Kosmos [caÅoÅÄ]
+09:42:09.084 [main] INFO  Starting logger - Search performed

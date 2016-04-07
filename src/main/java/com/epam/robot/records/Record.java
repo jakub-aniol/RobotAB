@@ -18,16 +18,16 @@ public class Record {
     private Downloader stream;
     private String title;
     private Date date;
-    private ArrayList<String> subject;
+    private ArrayList<String> keyWords;
 
     /**
      * Creates object based on three parameters.
      * @param title - title of the book.
      * @param url - address where book description can be found (in DublinCore format).
      * @param description - description about records in a library.
-     * @param subject - contains keyWords of the book.
+     * @param keyWords - contains keyWords of the book.
      */
-    public Record(String title, String url, String description, ArrayList<String> subject) {
+    public Record(String title, String url, String description, ArrayList<String> keyWords) {
         this.title = title;
         date = getDateFromDescription(description);
         try {
@@ -35,7 +35,7 @@ public class Record {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        this.subject = subject;
+        this.keyWords = keyWords;
     }
 
     /**
@@ -96,8 +96,8 @@ public class Record {
      * This method returns a type of the book.
      * @return <code>String</code> with title of the book.
      */
-    public ArrayList<String> getSubjectt() {
-        return subject;
+    public ArrayList<String> getKeyWords() {
+        return keyWords;
     }
 
     /**

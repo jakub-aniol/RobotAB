@@ -1,12 +1,16 @@
 package com.epam.robot.records;
 
+import java.util.ArrayList;
+
 /**
  * Object for storing information about book found in the library: title of the book and library name where it was found.
  * @author Adrian Drabik & Bartosz Klys
  * @since 2016-03-19
  */
 public class Book {
-    String title, library, profile;
+    String title, library;
+    ArrayList<String> keyWords;
+
 
     /**
      * This constructor creates object based on Record class and library name.
@@ -15,6 +19,7 @@ public class Book {
      */
     public Book(Record record, String library) {
         title = record.getTitle();
+        keyWords = record.getKeyWords();
         this.library = library;
     }
 
@@ -46,6 +51,12 @@ public class Book {
     public String getTitle() {
         return title;
     }
+
+
+    public ArrayList<String> getKeyWords() {
+        return keyWords;
+    }
+
 
     @Override
     public String toString() {

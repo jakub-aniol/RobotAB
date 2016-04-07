@@ -31,18 +31,14 @@ public class RecordParser {
         String title = "";
         String description = "";
         ArrayList<String>keyWord = new ArrayList<>();
+
         for (int x = 0; x < children.getLength(); x++) {
             node = children.item(x);
             if (node.getNodeName().equals("link")) {
                 url = node.getTextContent().replace("docmetadata?from=rss&", "rdf.xml?type=e&");
                 try {
-                    Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new Downloader(new URL(url)).getStream());
-
-                    NodeList nodeList = document.getElementsByTagName("dc:subject");
-                    for(int y = 0; y<nodeList.getLength(); y++){
-                        keyWord.add(nodeList.item(y).getTextContent());
-                    }
-
+                    Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new Downloader(new URL(url)).getStream()); //czy to ubrać w metodę???
+                    keyWordParser(document);
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -62,6 +58,15 @@ public class RecordParser {
         return (new Record(title, url, description, keyWord));
 
 
+    }
+
+    static ArrayList<String>  keyWordParser (Document document){
+        ArrayList<String>keyWordPars = new ArrayList<>();
+        NodeList nodeList = document.getElementsByTagName("dc:subject");
+        for(int y = 0; y<nodeList.getLength(); y++){
+            keyWordPars.add(nodeList.item(y).getTextContent());
+    }
+        return keyWordPars;
     }
 
 
