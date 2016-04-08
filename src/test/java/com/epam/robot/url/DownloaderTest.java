@@ -23,15 +23,11 @@ public class DownloaderTest {
     }
 
     @Test
-    public void testsGetStreamShouldThrowException_ForWrongURLAddress() {
+    public void testsGetStreamShouldThrowException_ForWrongURLAddress() throws MalformedURLException {
         //given
         boolean status = false;
-        Downloader downloader = null;
+        Downloader downloader = new Downloader(new URL("http://www.wp.pl"));
 
-        try {
-            downloader = new Downloader(new URL("http://www.wp.pl"));
-        } catch (MalformedURLException e) {
-        }
         //when
         InputStream is = downloader.getStream();
 
