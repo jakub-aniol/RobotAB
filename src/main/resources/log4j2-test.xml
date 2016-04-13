@@ -13,10 +13,12 @@
         <File name="bookLogger" fileName="books.log">
             <PatternLayout pattern="%d{YYYY-MM-DD} %msg%n"/>
         </File>
+
     </Appenders>
     <Loggers>
         <Root level="trace">
             <AppenderRef ref="File"/>
+
         </Root>
         <logger name="com.epam.robot.url" level="ERROR">
             <AppenderRef ref="urlErrors"/>
@@ -24,5 +26,7 @@
         <logger name="com.epam.robot.library" level="TRACE">
             <AppenderRef ref="bookLogger"/>
         </logger>
+
+
     </Loggers>
 </Configuration>

@@ -35,7 +35,8 @@ public class Downloader {
      * @return <code>InputStream</code> object with content of the URL address.
      */
     public InputStream getStream() {
-        HttpURLConnection connection = null;
+        InputStream inputStream;
+        HttpURLConnection connection;
 
         try {
             connection = (HttpURLConnection) url.openConnection();
@@ -43,12 +44,16 @@ public class Downloader {
             connection.setConnectTimeout(30 * 1000);
             connection.setRequestMethod("GET");
             connection.connect();
-            return connection.getInputStream();
+            inputStream = connection.getInputStream();
+
+            return inputStream;
+
         } catch (IOException e) {
             log.error(e.toString());
             return null;
 
         }
+
 
     }
 

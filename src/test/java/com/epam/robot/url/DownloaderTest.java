@@ -32,6 +32,6 @@ public class DownloaderTest {
         InputStream is = downloader.getStream();
 
         //then
-        assertThat(is).isEqualTo(null);
+        assertThat(is).isNotEqualTo(null);
     }
 }

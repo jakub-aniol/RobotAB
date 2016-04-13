@@ -15,5 +15,6 @@ public class BooksLogMessageSubscriber implements Subscriber<BookToLogMessage>{
     @Override
     public void receiveMessage(BookToLogMessage message) {
         booksLogger.log(message.getBook());
+
     }
 }

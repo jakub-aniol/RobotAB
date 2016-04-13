@@ -1,9 +1,9 @@
 package com.epam.robot;
 
 import com.epam.robot.library.BooksLoader;
-import com.epam.robot.messageBus.Subscribers.BooksLogMessageSubscriber;
 import com.epam.robot.library.BooksLogger;
 import com.epam.robot.messageBus.Subscriber;
+import com.epam.robot.messageBus.Subscribers.BooksLogMessageSubscriber;
 import com.epam.robot.messageBus.messages.FinishedQueryMessage;
 import com.epam.robot.records.Book;
 import com.epam.robot.ui.MainWindow;
@@ -37,6 +37,7 @@ public class Start implements Subscriber<FinishedQueryMessage>{
         URLList list = UserURLsReader.loadUserURLs();
         RSSParser parser = new RSSParser(list);
         List<Book> books = parser.getNewestBooks();
+
     }
 
     public static void main(String[] args) {

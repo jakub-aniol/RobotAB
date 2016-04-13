@@ -43,9 +43,11 @@ public class QueryWorker {
         }
 
         private void parseRSS(XMLHandler handler, DCMetadataParser parser, String library) {
-            Book book;
+       //    CreateBook createBook = new CreateBook();
+            Book book = null;
             List<Record> list = handler.getRecords();
             List<Book> newestBooks = new ArrayList<>();
+
             for (Record r : list) {
                 if (parser.isDateInvalid(r)) break;
                 book = new Book(r, library);
@@ -53,7 +55,13 @@ public class QueryWorker {
                 newestBooks.add(book);
                 send(new CheckBookStatusMessage(book));
             }
+
+           /* for(Book k : newestBooks){
+                createBook.addingBook(k);
+            }*/
+
             send(new FinishedTaskMessage());
         }
+
     }
 }

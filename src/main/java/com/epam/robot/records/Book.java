@@ -50,6 +50,15 @@ public class Book {
     }
 
     /**
+     * Method return type of the book.
+     *
+     * @return <code>String</code> with type.
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
      * Method return title of the book.
      *
      * @return <code>String</code> with title.

@@ -33,12 +33,13 @@ public class RecordParser {
         String type = "";
         ArrayList<String>keyWord = new ArrayList<>();
 
+
         for (int x = 0; x < children.getLength(); x++) {
             node = children.item(x);
             if (node.getNodeName().equals("link")) {
                 url = node.getTextContent().replace("docmetadata?from=rss&", "rdf.xml?type=e&");
                 try {
-                    Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new Downloader(new URL(url)).getStream()); //czy to ubrać w metodę???
+                    Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(new Downloader(new URL(url)).getStream()); //czy to ubrać w metodę??? co z zamknięciem strumienia?
                     keyWord = keyWordParser(document);
                     type = typeOfBookParser(document);
 
@@ -57,6 +58,7 @@ public class RecordParser {
                 description = node.getTextContent();
 
         }
+
         return (new Record(title, url, description, type, keyWord));
 
 
