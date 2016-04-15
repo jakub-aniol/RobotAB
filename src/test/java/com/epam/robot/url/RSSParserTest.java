@@ -1,18 +1,14 @@
 package com.epam.robot.url;
 
 import com.epam.robot.messageBus.Subscriber;
-import com.epam.robot.messageBus.messages.CheckBookStatusMessage;
 import com.epam.robot.messageBus.messages.FinishedQueryMessage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.awt.print.Book;
 import java.io.File;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.nio.file.Files;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -3,6 +3,7 @@ package com.epam.robot.channels;
 
 import com.epam.robot.urlWorker.QueryWorker;
 import com.epam.robot.urlWorker.Task;
+import com.epam.robot.util.HibernateUtil;
 
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -21,10 +22,15 @@ public class QueryChannel {
     }
 
     private void initialize() {
+        HibernateUtil.getSessionFactory();
         channelQueue = new LinkedBlockingDeque<>();
         new QueryWorker(channelQueue).activate(10);
+
+
     }
     public void offer(Task task){
+
+
         channelQueue.offer(task);
     }
 }
